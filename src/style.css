@@ -64,7 +64,25 @@ main {
 .weather-app-details strong {
     color:  #dc3545;
 }
+.weather-app-temperature-container{
+    display: flex;
+}
+.weather-app-degrees{
+    font-size: 85px;
+    font-weight: bold;
 
+}
+.weather-app-emoji{
+    font-size: 44px;
+    margin: 22px;
+    margin-left: 10px;
+
+}
+.weather-app-unit{
+    margin-top: 16px;
+    font-size: 28px;
+
+}
 footer{
     border-top: 1px solid #eae0e0;
     padding: 30px 0 0 0;
