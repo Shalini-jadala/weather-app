@@ -7,6 +7,10 @@ function getWeather(response){
     let windElement = document.querySelector("#wind");
     let timeElement = document.querySelector("#time");
     let date = new Date(response.data.time * 1000);
+    let emojiElement = document.querySelector("#emoji");
+
+    emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}"
+        class="weather-app-emoji" />`;
 
 
 
@@ -23,7 +27,7 @@ function getWeather(response){
     
     let minutes = date.getMinutes();
     let hours = date.getHours();
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 
      let day = days[date.getDay()];

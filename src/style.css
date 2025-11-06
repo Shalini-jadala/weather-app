@@ -4,7 +4,7 @@ body {
 
 }
 .my-app{
-    background-color: whitesmoke;
+    background-color: rgb(251, 236, 208);
     max-width: 600px;
     margin: 30px auto;
     box-shadow: 0 30px 50px #7f69e914;
@@ -18,7 +18,7 @@ header{
     padding: 0 0 30px 0;
 }
 a {
-    color: rgb(251, 91, 118);;
+    color: blue;
 }
 .search-form-input{
     background-color:  #eae0e0;
@@ -57,7 +57,7 @@ main {
     font-size: 16px;
     line-height: 25px;
     font-weight: 500;
-    color: rgba(39, 33, 66, 0.4);
+    color: black;
 
 
 }
@@ -73,13 +73,13 @@ main {
 
 }
 .weather-app-emoji{
-    font-size: 44px;
-    margin: 22px;
+    width: 88px;
+    height: 88px;
     margin-left: 10px;
 
 }
 .weather-app-unit{
-    margin-top: 16px;
+    margin-top: 10px;
     font-size: 28px;
 
 }
@@ -88,6 +88,6 @@ footer{
     padding: 30px 0 0 0;
     text-align: center;
     font-size: 13px;
-    color: rgba(0, 0, 0, 0.6);
+    color: solid rgba(0, 0, 0, 0.6);
 
 }
