@@ -12,9 +12,9 @@ function getWeather(response){
     emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}"
         class="weather-app-emoji" />`;
 
+    
 
-
-    cityElement.innerHTML = response.data.city;
+ cityElement.innerHTML = response.data.city;
     timeElement.innerHTML = formatDate(date);
     descriptionElement.innerHTML = response.data.condition.description;
     windElement.innerHTML = `${response.data.wind.speed}km/h`;
