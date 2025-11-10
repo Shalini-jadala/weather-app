@@ -20,6 +20,8 @@ function getWeather(response){
     windElement.innerHTML = `${response.data.wind.speed}km/h`;
     humidityElement.innerHTML =  `${response.data.temperature.humidity}%,`;
     temperatureElement.innerHTML = Math.round(cityTemperature);
+
+    getForecast(response.data.city);
     
    
 }
@@ -57,7 +59,15 @@ function handleSearchSubmit(event){
     searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+    let apiKey = "0a8c6e7ct4a98df4436abe8fo0c14f17";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
+}
+
+    function displayForecast(response) {
+    
+    
     let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
     let forecastHtml = "";
 
@@ -89,5 +99,5 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("India");
-displayForecast();
+
 
